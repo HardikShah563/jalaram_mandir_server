@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "name": "jalaram_mandir_server",
+    "builds": [
+        {
+            "src": "app.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/app.js"
+        }
+    ]
+}
